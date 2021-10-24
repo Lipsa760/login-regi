@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            line-height: 70px;
+            font-size: 6vh;
+        }
+
+        .main {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("https://media.istockphoto.com/photos/multicolored-leaves-picture-id1318863607?b=1&k=20&m=1318863607&s=170667a&w=0&h=cbmHeDJmci7crkEt_-PM5owWC9trvrptpWnWKDTxYU0=");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .survey {
+            position: absolute;
+            box-shadow: 0 0 50px black;
+            width: 40%;
+            height: 65%;
+            margin-left: 27%;
+            padding: 50px;
+        }
+
+        form {
+            font-size: 3vh;
+            margin: 30px;
+        }
+
+        button {
+            background-color: cornsilk;
+            color: rgb(6, 6, 88);
+            font-size: 2vh;
+            width: 18%;
+            height: 30px;
+            border-radius: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Login</h1>
+        <div class="survey">
+            <form>
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Enter Your Name" pattern="[a-z]" /></br></br>
+                <label>Email</label>
+                <input type="email" placeholder="Enter Your Email" pattern=".+@gmail.com" required /></br></br>
+                <label>Password</label>
+                <input type="password" placeholder="password" pattern="[a-z]" minlength="8" required /></br></br>
+                <button>Reset</button>
+                <button>Login</button>
+                <h6>Don't have an account?</h6>
+                <button><a href="registration.html">Register</a></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
